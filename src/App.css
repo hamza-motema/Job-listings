@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Rubik:wght@500&family=Spartan:wght@500;700&display=swap');
+
+.header {
+  background-image: url('./components/images/bg-header-desktop.svg');
+  height: 156px;
+  width: 100%;
+  height: 155px;
+  background-size: cover;
+  background-position: center;
+  background-color: #5DA4A4;
+}
+.main{
+  padding: 20px 100px, 0, 100px !important;
+}
+a{
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr{
+  border-top: 10px solid red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.company-name{
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5CA5A5;
+}
+.new-featured-section, .list-btn{
+  display: flex;
+}
+.list-btn{
+  margin-left: auto;
+  margin-right: 20px;
+}
+.new-featured-section,{
+  margin-left: 20px;
+  padding: 0;
+}
+.new-featured-section > li{
+  margin-left: 10px;
+}
+
+.logo{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.new, .featured{
+  border-radius: 12px;
+  height: 24px;
+  text-align: center;
+  display: flex;
   color: white;
+  align-items:center;
+  justify-content:center;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: -0.0846154px;
+  text-transform: uppercase;
+}
+.new{
+  background: #5CA5A5;
+  width: 51px;
 }
 
-.App-link {
-  color: #61dafb;
+.section1, .section3{
+  display: flex;
+}
+.section1{
+  align-items: center;
+}
+.section3{
+  justify-content: space-between;
+  padding: 0;
+  
+}
+.section3 > li {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.115385px;
+  color: #7C8F8F;
+}
+.featured{
+  width: 79px;
+  background: #2B3939;
+}
+.card{
+  margin-inline: 10%;
+  display: flex;
+  height: 152px;
+  margin-top: 20px;
+  justify-content: safe;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 20px -5px #888888;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover{
+  border-left: 10px solid #5CA5A5;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.title{
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2B3939;
+}
+
+.list-btn > li > button{
+  cursor: pointer;
+  background: #7CE6E6;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  border: none;
+  color: #5CA5A5;
+  letter-spacing: -0.1px;
+}
+
+.button{
+  background: #7CE6E6;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  border: none;
+  color: #5CA5A5;
+  letter-spacing: -0.1px;
+  height: 32px;
+  padding-left: 5px;
+}
+
+
+
+.panel{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 72px;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 20px -5px #888888;
+  border-radius: 5px;
+  margin-inline: 10%;
+  display: flex;
+  border: 1px solid;
+  padding: 10px;
+
+}
+
+.items{
+  display: flex;
+}
+
+.clear-btn{
+  align-items: end;
+  height: auto;
+  margin-left: auto;
+  margin-block: auto;
+  border: none;
+  background: transparent;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.1px;
+  text-decoration-line: underline;
+  color: #5CA5A5;
+  cursor: pointer;
+}
+
+.cross{
+  cursor: pointer;
+  background: #5CA5A5;
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  padding: 5px;
+  border: none;
+}
+
+.cross:hover{
+  background: #2B3939;
+}
+
+.footer{
+        display: inline-block; 
+        width: 100%;
+        height: 100px;
+        vertical-align: middle; 
+        line-height: 100px;
+        text-align: center; 
 }
